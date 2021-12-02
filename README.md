@@ -4,3 +4,7 @@
 
 - ✔️ This web application predicts gender based on name.
 - ✔️ In case of incorrect diagnosis, the correct answer can be stored in localStorage.
+
+<br>
+
+- 🔗 https://hourahashemi.github.io/WebCourse-Midterm-Project/
