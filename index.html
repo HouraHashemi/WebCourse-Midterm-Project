@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <title name ="title">Mr. or Ms.</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script type="text/javascript" src="script.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	
+</head>
+    
+    
+    
+<body>
+    
+<!-- SECTION -->
+<section>
+    <!-- CONTENT BLOCK -->
+    <div class="row">
+        <!-- COLUMN1 -->
+        <div class="column1">
+            <p id="text"><strong>Mr. or Ms.?</strong></p>
+            <form id="confirm-request" action="">
+                <!-- NAME FIELD -->
+                <div class="name">
+                    <form action="">
+                        <label>Name</label>
+                        <input id="username" type="text" maxlength="225" onkeypress="return ValidateAlpha(event);">
+                    </form>
+                </div>
+                <!-- END OF NAME FIELD -->
+                <div class="gender">
+                    <!-- GENDER RADIOS BUTTONS -->
+                    <label class="radio-label">
+                        <input type="radio" id="radio-input" name="radio-input" value="male">
+                        <div class="radio-text">&nbsp Male</div>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" id="radio-input" name="radio-input" value="female">
+                        <div class="radio-text">&nbsp Female</div>
+                    </label>
+                    <!-- END OF GENDER RADIOS BUTTONS -->
+
+                    <!-- CONFIRM BUTTONS -->
+                    <div class="confirm">
+                        <button id="submit" onclick="submit_request();">submit</button>
+                        <button id="save" onclick="save_request();">save</button>
+                    </div>
+                    <!-- END OF CONFIRM BUTTONS -->
+                </div>
+                <!-- MASSAGE -->
+                <div class="massage">
+                    <p id="alert-massage"><strong>No massage</strong></p>
+                </div>
+                <!-- END OF MASSAGE -->
+            </form> 
+        </div>
+        <!-- END OF COLUMN1 -->
+
+        <!-- COLUMN2 -->
+        <div class="column2">
+            <label id="text"><strong>Prediction</strong></label>
+            <!-- PREDICION BLOCK -->
+            <div class="prediction">
+                <p class="info" id="this-name">None</p>
+                <p class="info" id="gender">None</p>
+                <p class="info" id="probability">None</p>
+                <p class="info" id="count">None</p>
+                <div class="seved-answer">
+                    <p id="answer" >None</p>
+                    <button id="clear" onclick="remove_saved_request();">x</button>
+                </div>
+            </div>
+            <!-- END OF PREDICTION BLOCK -->
+        </div>
+        <!-- END OF COLUMN2 -->
+    </div>
+    <!-- END OF CONTENT BLOCK -->
+
+</section>
+<!-- END OF SECTION -->
+    
+    
+    
+</body>
+
+</html>
+
+
