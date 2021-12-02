@@ -1,0 +1,247 @@
+/*contain content 
+---------------------------*/
+body{   
+    font-family: system-ui;
+    background-color:skyblue;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    background-position: center;
+    min-height: 640px;
+    align-content: center;
+    
+}
+/*contain content 
+---------------------------*/
+section{
+    display: flex;
+    margin: auto;
+    padding-top: 100px;
+}
+
+
+/*contain content boxexs */
+.row {
+    display: flex;
+    margin: auto;
+    border-radius: 25px;
+    border: 2px solid black;
+    
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0,0,0,30%);
+    min-height: 300px;
+}
+
+
+/*column_1
+---------------------------*/
+.column1 {
+    flex: 1;
+    padding: 30px;
+    min-height: 270px;
+
+}
+
+/*contain input and its label*/
+.column1 .name{
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+/*input*/
+.column1 .name input{
+    border-radius: 5px;
+    border: 1.5px solid black;
+    border-left: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    /* remove focus of name input*/
+    outline: none; 
+
+}
+
+/*input label*/
+.column1 .name label{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1.5px solid black;
+    border-right: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    /*creates a transparent layer*/
+    background-color: rgba(0,0,0,20%);
+}
+
+
+/* contain radio buttons and confirm bottens*/
+.column1 .gender{
+    padding-bottom: 10px;
+    padding-top: 10px;    
+    
+}
+
+/* contain radio buttons labels*/
+.column1 .gender .radio-label{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 5px ;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: .3s;
+    background-color: rgba(0,0,0,20%);
+    
+}
+
+/* create new white transparent layer when hover focus on radio buttons*/
+/*hsla: Hue-saturation-lightness-alpha model*/
+.column1 .gender .radio-label:hover,
+.column1 .gender .radio-label:focus-within {
+  background: hsla(0, 0%, 100%, .14);
+}
+
+
+/*new radio button style before checked*/
+input[type='radio']:after {
+    width: 14px;
+    height: 14px;
+    top: -1px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #FEF9E7;
+    content: '';
+    display: inline-block;
+}
+
+/*new radio button style after checked*/
+input[type='radio']:checked:after {
+    
+    width: 14px;
+    height: 14px;
+    border-radius: 15px;
+    top: -px;
+    position: relative;
+    background: linear-gradient(orange, orangered);
+    content: '';
+    display: inline-block;
+}
+
+
+
+/* contain confirm buttons*/
+.column1 .gender .confirm{
+    display: flex;
+    padding-top: 20px;
+    
+}
+
+/* style of all buttons*/
+.column1 .gender .confirm button{
+    flex: 1;
+    color: white;
+    font-size: 14px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 25px;
+    background-color: rgba(0,0,0,50%);
+    font-family: system-ui;
+
+
+}
+
+/* style of submit button*/
+.column1 .gender .confirm #submit{
+    margin-right: 5px;
+
+}
+/* style of save button*/
+.column1 .gender .confirm #save{
+    margin-left: 5px;
+}
+
+/* change to transparent style when mouse focus on confirm buttons*/
+.column1 .gender .confirm button:hover{
+    opacity: 80%;
+}
+
+/* response of requests*/
+.column1 .massage #alert-massage{
+    font-size: 12px;
+    background-color:darkslategray;
+    border-radius: 125px;
+    padding: 8px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+/*column_2 ---------------------------*/
+.column2 {
+    flex: 1;
+    padding: 30px;
+    min-height: 270px;
+    border-left: 2px solid black;
+    padding-top: 44px;
+}
+
+
+/*contain prediction info and saved answers*/
+.column2 .prediction{
+    padding: 10px;
+    margin-top: 25px;
+    background-color: rgba(0,0,0,50%);
+    border-radius: 15px;
+    min-height: 180px;
+    min-width: 130px;
+
+}
+
+
+
+/*contain info of prediction*/
+.column2 .prediction .info{
+    font-size: 14px;
+    padding-left: 5px;
+    margin: 8px;
+}
+
+/*contain saved answer and clear button*/
+.column2 .prediction .seved-answer{
+    display: flex;
+    font-size: 14px;
+    margin-top: 30px;
+    background-color: rgba(0,0,0,30%);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 100px;
+}
+
+/*style of saved answer massage*/
+.column2 .prediction .seved-answer p {
+    flex: 1;
+    margin: auto;
+    padding-right: 10px;
+    color: wheat;
+    font-weight: bold;
+}
+
+/*style of clear button*/
+.column2 .prediction .seved-answer button{
+    
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    color: white;
+    background: radial-gradient(red,crimson);
+
+}
